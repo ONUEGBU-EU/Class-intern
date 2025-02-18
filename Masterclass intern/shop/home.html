@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JahShop- Your One-Stop Shopping Hub</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>JahShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Amazing Products</h2>
+            <p>Shop the latest trends at unbeatable prices</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/watch.png" alt="Product 1">
+                <h3>Premium Watch</h3>
+                <p class="price">$129.99</p>
+                <button class="add-to-cart" data-id="1" data-name="Premium Watch" data-price="129.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/sun glasses.png" alt="Product 2">
+                <h3>Designer Sunglasses</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart" data-id="2" data-name="Designer Sunglasses" data-price="89.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/wallet.png" alt="Product 3">
+                <h3>Leather Wallet</h3>
+                <p class="price">$59.99</p>
+                <button class="add-to-cart" data-id="3" data-name="Leather Wallet" data-price="59.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Bluetooth-Ear-Pods-1.png" alt="Product 4">
+                <h3>Wireless Earbuds</h3>
+                <p class="price">$149.99</p>
+                <button class="add-to-cart" data-id="4" data-name="Wireless Earbuds" data-price="149.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="product-categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/kitchen-appliances.png" alt="Electronics">
+                <h3>Electronics</h3>
+                <a href="#" class="category-link">Browse</a>
+            </div>
+            <div class="category-card">
+                <img src="images/fashion.png" alt="Fashion">
+                <h3>Fashion</h3>
+                <a href="#" class="category-link">Browse</a>
+            </div>
+            <div class="category-card">
+                <img src="images/kitchen-gadgets.png" alt="Home & Kitchen">
+                <h3>Home & Kitchen</h3>
+                <a href="#" class="category-link">Browse</a>
+            </div>
+            <div class="category-card">
+                <img src="images/beauty.png" alt="Beauty">
+                <h3>Beauty</h3>
+                <a href="#" class="category-link">Browse</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About JAHSHOP</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/0007.jpg_wh1200.png" alt="About our store">
+            </div>
+            <div class="about-text">
+                <p>Welcome to JahShop, your premier online shopping destination. Founded in 2022, we're committed to providing high-quality products at affordable prices. Our mission is to make shopping easy, enjoyable, and accessible to everyone.</p>
+                <p>We carefully curate our product selection to ensure you get only the best. From trendy fashion to cutting-edge electronics, we've got everything you need under one roof.</p>
+                <p>Our dedicated customer service team is available 24/7 to assist with any questions or concerns. We pride ourselves on fast shipping, hassle-free returns, and a seamless shopping experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="quote">"JahShop has the best prices and fastest shipping I've experienced. Highly recommended!"</div>
+                <div class="customer">- Sarah Johnson</div>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <div class="quote">"The quality of products exceeds expectations. I'm a loyal customer for life."</div>
+                <div class="customer">- Mike Thompson</div>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <div class="quote">"Customer service is outstanding. They went above and beyond to resolve my issue."</div>
+                <div class="customer">- Emily Rodriguez</div>
+                <div class="rating">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest products, exclusive offers, and discounts.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Shopping Street, Retail City, RC 10001</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>support@jahshop.com</p>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JahShop</h3>
+                <p>Your trusted online shopping destination since 2022. Quality products, exceptional service, unbeatable prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Payment Methods</h3>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 JahShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get cart count from localStorage
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            document.getElementById('cart-count').innerText = cartItems.length;
+            
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = button.getAttribute('data-id');
+                    const productName = button.getAttribute('data-name');
+                    const productPrice = button.getAttribute('data-price');
+                    
+                    const item = {
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        quantity: 1
+                    };
+                    
+                    // Check if item is already in cart
+                    const existingItemIndex = cartItems.findIndex(cartItem => cartItem.id === productId);
+                    
+                    if (existingItemIndex > -1) {
+                        cartItems[existingItemIndex].quantity += 1;
+                    } else {
+                        cartItems.push(item);
+                    }
+                    
+                    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                    document.getElementById('cart-count').innerText = cartItems.length;
+                    
+                    alert(`${productName} added to cart!`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
